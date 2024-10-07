@@ -1,4 +1,5 @@
 import { i18nIt } from "@/i18n/it";
+import { i18nDe } from "@/i18n/de";
 import i18n from "i18next";
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
@@ -23,6 +24,7 @@ export class InternationalisationService {
 			});
 
 		i18n.addResourceBundle("en", "common", i18nEn);
+		i18n.addResourceBundle("en", "common", i18nDe);
 		i18n.addResourceBundle("it", "common", i18nIt);
 	}
 }
